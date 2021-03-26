@@ -7,7 +7,7 @@ import tempfile
 import shutil
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from bilm.model import BidirectionalLanguageModel, dump_token_embeddings
 from bilm.data import Batcher, TokenBatcher

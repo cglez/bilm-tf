@@ -1,11 +1,9 @@
-
-
 import unittest
 import os
 import shutil
 import tempfile
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 
 from bilm.training import train, test, load_vocab, \
@@ -149,4 +147,3 @@ class TestLanguageModel(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-

@@ -1,6 +1,5 @@
-
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import h5py
 import json
 import re

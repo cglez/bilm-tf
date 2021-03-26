@@ -6,7 +6,7 @@ Below, we show usage for SQuAD where each input example consists of both
 a question and a paragraph of context.
 '''
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import os
 from bilm import TokenBatcher, BidirectionalLanguageModel, weight_layers, \
     dump_token_embeddings
