@@ -407,7 +407,10 @@ class LMDataset(object):
     def get_sentence(self):
         while True:
             if self._i == self._nids:
-                self._ids = self._load_random_shard()
+                try:
+                    self._ids = self._load_random_shard()
+                except StopIteration:
+                    return
             ret = self._ids[self._i]
             self._i += 1
             yield ret
