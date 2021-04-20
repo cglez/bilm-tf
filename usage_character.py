@@ -9,6 +9,8 @@ import tensorflow.compat.v1 as tf
 import os
 from bilm import Batcher, BidirectionalLanguageModel, weight_layers
 
+tf.disable_v2_behavior()
+
 # Location of pretrained LM.  Here we use the test fixtures.
 datadir = os.path.join('tests', 'fixtures', 'model')
 vocab_file = os.path.join(datadir, 'vocab_test.txt')

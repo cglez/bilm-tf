@@ -11,6 +11,8 @@ import os
 from bilm import TokenBatcher, BidirectionalLanguageModel, weight_layers, \
     dump_token_embeddings
 
+tf.disable_v2_behavior()
+
 # Our small dataset.
 raw_context = [
     'Pretrained biLMs compute representations useful for NLP tasks .',
