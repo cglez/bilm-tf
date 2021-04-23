@@ -1,9 +1,7 @@
-
 bilm.egg-info/
 dist/
 build/
+model/
 
 *.pyc
 *.swp
-
-
