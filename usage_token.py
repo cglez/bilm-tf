@@ -6,12 +6,10 @@ Below, we show usage for SQuAD where each input example consists of both
 a question and a paragraph of context.
 '''
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 import os
 from bilm import TokenBatcher, BidirectionalLanguageModel, weight_layers, \
     dump_token_embeddings
-
-tf.disable_v2_behavior()
 
 # Our small dataset.
 raw_context = [

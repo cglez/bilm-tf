@@ -5,11 +5,9 @@ Below, we show usage for SQuAD where each input example consists of both
 a question and a paragraph of context.
 '''
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 import os
 from bilm import Batcher, BidirectionalLanguageModel, weight_layers
-
-tf.disable_v2_behavior()
 
 # Location of pretrained LM.  Here we use the test fixtures.
 datadir = os.path.join('tests', 'fixtures', 'model')

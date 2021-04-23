@@ -6,9 +6,6 @@ a file.
 import os
 import h5py
 from bilm import dump_bilm_embeddings
-import tensorflow.compat.v1 as tf
-
-tf.disable_v2_behavior()
 
 # Our small dataset.
 raw_context = [

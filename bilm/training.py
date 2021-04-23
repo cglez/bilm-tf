@@ -7,14 +7,13 @@ import time
 import json
 import re
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 import numpy as np
 
 from tensorflow.python.ops.init_ops import glorot_uniform_initializer
 
 from .data import Vocabulary, UnicodeCharsVocabulary, InvalidNumberOfCharacters
 
-tf.disable_v2_behavior()
 
 DTYPE = 'float32'
 DTYPE_INT = 'int64'

@@ -3,7 +3,7 @@ import os
 import shutil
 import tempfile
 
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 import numpy as np
 
 from bilm.training import train, test, load_vocab, \
